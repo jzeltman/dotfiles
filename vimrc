@@ -6,7 +6,7 @@ set showcmd
 set hlsearch
 set ignorecase
 set smartcase
-set backspace=indent,eol,start
+set backspace=eol,start,indent
 set autoindent
 set nostartofline
 set cmdheight=3
@@ -16,6 +16,17 @@ set softtabstop=2
 set expandtab
 set laststatus=2
 set noswapfile
+set autoread
+set ruler
+
+" Map <leader> to comma instead of \
+let mapleader = ","
+
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
+
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
 
 :imap kj <Esc>
 
