@@ -11,6 +11,7 @@ set autoindent
 set nostartofline
 set cmdheight=3
 set number
+set numberwidth=5
 set shiftwidth=4
 set softtabstop=4
 set expandtab
@@ -25,6 +26,8 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 set mouse=a
+set cursorline 
+set textwidth=80
 " clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>   
 set clipboard=unnamed
@@ -64,6 +67,7 @@ colorscheme solarized
 :map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=40
 let NERDTreeShowHidden=1
+let g:NERDTreeMapOpenInTabSilent = '<2-LeftMouse>'
 
 " Airline - https://github.com/bling/vim-airline
 let g:airline_powerline_fonts = 1
