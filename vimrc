@@ -18,8 +18,13 @@ set laststatus=2
 set noswapfile
 set autoread
 set ruler
-set  foldmethod=indent
+set foldmethod=indent
 set foldlevelstart=20
+let &colorcolumn=join(range(81,999),",")
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+set mouse=a
 " clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>   
 set clipboard=unnamed
