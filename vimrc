@@ -28,6 +28,7 @@ set guioptions-=L
 set mouse=a
 set cursorline 
 set textwidth=80
+set virtualedit=onemore
 " clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>   
 set clipboard=unnamed
@@ -97,3 +98,9 @@ au BufRead,BufNewFile *.hbt set filetype=mustache
 
 " http://myusuf3.github.io/numbers.vim/
 nnoremap <F3> :NumbersToggle<CR>
+
+
+" https://github.com/pangloss/vim-javascript
+""let javascript_enable_domhtmlcss=0
+""let regexpengine=1
+""let b:javascript_fold=0
